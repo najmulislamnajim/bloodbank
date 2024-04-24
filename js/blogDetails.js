@@ -83,6 +83,7 @@ const handleComment=()=>{
     .then(response => {
         if(response.ok){
             console.log("works fine");
+            window.location.href = 'pages/blogDetails.html?blogId=${param}'
         }
         else{
             console.log("not working");
