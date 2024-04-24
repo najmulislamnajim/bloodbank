@@ -25,7 +25,7 @@ function navigation(){
                           <a class="nav-link" href="../index.html#donor">Donor </a>
                         </li>
                         <li class="nav-item" >
-                          <a class="nav-link" href="pages/blog.html">Blog</a>
+                          <a class="nav-link" href="blog.html">Blog</a>
                         </li>
   
                         <li class="nav-item">
@@ -56,14 +56,14 @@ function navigation(){
         <a class="nav-link" href="#" onclick="myLogout()">Logout</a>
       `;
       profileRegister.innerHTML = `
-        <a class="nav-link" href="pages/profile.html">Profile</a>
+        <a class="nav-link" href="profile.html">Profile</a>
       `;
     } else {
       loginLogoutElement.innerHTML = `
-        <a class="nav-link" href="pages/login.html">Login</a>
+        <a class="nav-link" href="login.html">Login</a>
       `;
       profileRegister.innerHTML = `
-        <a class="nav-link" href="pages/registration.html">Sign Up</a>
+        <a class="nav-link" href="registration.html">Sign Up</a>
       `;
     }
   
