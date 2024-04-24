@@ -28,7 +28,7 @@ const myLogout=()=>{
         localStorage.removeItem('token')
         localStorage.removeItem('user_id')
          alert('Logout successfully');
-         window.location.href = '../pages/login.html';
+         window.location.href = 'pages/login.html';
         console.log(data);
          console.log('Logout successfully...');
      })
