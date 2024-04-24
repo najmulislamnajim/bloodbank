@@ -407,7 +407,9 @@ header .nav-col .navbar-nav li {
 
 /* ***** donation process css ***** */
 .donation-care {
-    padding: 50px;
+    /* padding: 50px; */
+    padding-left: 20px;
+    padding-top: 10px;
     background-color: #FFF;
 }
 @media screen and (max-width: 940px) {
@@ -576,6 +578,6 @@ footer {
     position: absolute;
     margin-top: -112px; }
 .my-image{
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
 }

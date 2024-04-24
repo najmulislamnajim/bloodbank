@@ -7,27 +7,23 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>
-      Swapnosiri blood bank | A sister ngo of Swapnosiri youth welfare
+      Login | Swapnosiri blood bank | A sister ngo of Swapnosiri youth welfare
       organigation
     </title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/fav.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../assets/images/fav.png" type="image/x-icon"/>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./assets/images/blood-color-32.png" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css" />
+    <link rel="shortcut icon" href="../assets/images/blood-color-32.png" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/fontawsom-all.min.css" />
     <link
       rel="stylesheet"
-      href="assets/plugins/grid-gallery/css/grid-gallery.min.css"
+      href="../assets/plugins/grid-gallery/css/grid-gallery.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./register.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
   </head>
 
   <body>
@@ -37,47 +33,12 @@
           <div class="container">
             <div class="row nav-row">
               <div class="col-md-3 logo">
-                <a href="./"
-                  ><img src="./assets/images/web-logo.png" alt="logo"
+                <a href="../index.html"
+                  ><img src="../assets/images/web-logo.png" alt="logo"
                 /></a>
               </div>
-              <div class="col-md-9 nav-col">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                      </li>
+              <div id="dynamicNav2" class="col-md-9 nav-col">
 
-                      <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#process">Process</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact US</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
               </div>
             </div>
           </div>
@@ -92,52 +53,35 @@
                 <div class="col-12 col-lg-9 col-xl-7">
                   <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
                     <div class="card-body p-4 p-md-5">
-                      <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Request for Blood</h3>
-                      <form>
-               <!-- username & email  -->
+                      <h3 class="mb-0 pb-2 pb-md-0 mb-md-5">Login Form</h3>
+
+
+
+                      <form id="loginForm" >
                         <div class="row">
-                          <div class="col-md-6 mb-4">
-          
+                          
+                          <div class="col-md-8 ">
+                            <label class="form-label select-label" for="">E-mail:</label>
                             <div class="form-outline">
-                              <input type="text" id="name" class="form-control form-control-lg" placeholder="Patient Name"/>
+                              <input type="email" placeholder="Email" id="email" name="email" class="form-control form-control-lg" required/>
                             </div>
-          
-                          </div>
-                          <div class="col-md-6 mb-4">
-          
+
+                            <label class="form-label select-label" for="">Password:</label>
                             <div class="form-outline">
-                              <input type="text" placeholder="Patient Email" id="email" class="form-control form-control-lg" />
+                              <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password" required/>
                             </div>
           
                           </div>
                         </div>
 
-                        <!-- Location & phone no  -->
-                        <div class="row">
-                            <div class="col-md-6 mb-4 pb-2">
-            
-                                <div class="form-outline">
-                                    <input type="text" placeholder="Location" id="location" class="form-control form-control-lg" />
-                                  </div>
-            
-                            </div>
-                            <div class="col-md-6 mb-4 pb-2">
-            
-                              <div class="form-outline">
-                                <input type="tel" id="phone" class="form-control form-control-lg" placeholder="Phone Number"/>
-                              </div>
-            
-                            </div>
-                          </div>
-                        <!-- Disease -->
-                        <div class="row">
-                            <div class="col-md-6 mb-4 pb-2">
-                            <div class="form-outline">
-                                <input type="text" placeholder="Disease" id="disease" class="form-control form-control-lg" />
-                            </div>
-                            </div>
+          
+                        <div > 
+                          <button onclick="loginUser()" type="button" class="btn btn-primary">Login</button>
                         </div>
-                        <button onclick="handleDonate()" type="button" class="btn btn-primary">Request</button>
+
+                        <div class="mt-2">
+                            <span >Don't have an accout? <a href="./registration.html" style="color:blue">Register Here</a></span>
+                        </div>
           
                       </form>
                     </div>
@@ -147,7 +91,8 @@
             </div>
           </section>
     </main>
-    
+
+
     <!--*************** Footer  Starts Here *************** -->
     <footer id="contact" class="container-fluid">
       <div class="container">
@@ -267,11 +212,14 @@
   </body>
 
 
-  <script src="./app.js"></script>
-  <script src="assets/js/jquery-3.2.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/plugins/grid-gallery/js/grid-gallery.min.js"></script>
-  <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="../js/dynamicNav2.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/logout.js"></script>
+  <!-- <script src="./app.js"></script> -->
+  <script src="../assets/js/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/plugins/grid-gallery/js/grid-gallery.min.js"></script>
+  <script src="../assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+  <script src="../assets/js/script.js"></script>
 </html>

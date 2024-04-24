@@ -1,0 +1,6 @@
+{
+  "[django-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "files.autoSave": "afterDelay"
+}
