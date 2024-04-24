@@ -74,7 +74,6 @@ const handleComment=()=>{
     const form = document.getElementById('postComment');
     const formData = new FormData(form);
     formData.append('blog', param);
-    console.log([ ...formData ]);
 
     fetch('https://bloodbankserver-s2p9.onrender.com/blog/comment/', {
         method: 'POST',
