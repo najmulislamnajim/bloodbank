@@ -187,7 +187,7 @@ const displayDonor=(data)=>{
       
       <button class="btn btn-sm btn-danger callingButton"><a  onclick="callButton('${phone}')" style="color: #fff;">Call Now</a> 
       </button>
-      <button class="btn btn-sm btn-danger" ><a  href="./bloodbank/pages/request.html?donorId=${data.id}" style="color: #fff;">Request to Donate</a>
+      <button class="btn btn-sm btn-danger" ><a  href="./pages/request.html?donorId=${data.id}" style="color: #fff;">Request to Donate</a>
 
       </div>
     `;
