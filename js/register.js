@@ -109,7 +109,7 @@ function registerUser() {
             const errorMessage = errorData.error;
             console.log(errorMessage);
           })
-  });
+  }); 
 }
 
 
