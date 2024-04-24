@@ -105,7 +105,7 @@ const displayLatestBlog=(data)=>{
         div.innerHTML=`
             <div style="padding:5px">
                 <h4>${data.title}</h4>
-                <h6>Author: ${data.author} <span>| ${dateConverter(data.created_date)}</span> <br/>  <a href="pages/blogDetails.html?blogId=${data.id}"><span style="color:blue;"> Read Now </span></a></h6>
+                <h6>Author: ${data.author} <span>| ${dateConverter(data.created_date)}</span> <br/>  <a href="blogDetails.html?blogId=${data.id}"><span style="color:blue;"> Read Now </span></a></h6>
             </div>
         `
         parent.appendChild(div)
