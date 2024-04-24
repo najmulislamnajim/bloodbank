@@ -29,7 +29,7 @@ function navigation(){
                           <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item" >
-                          <a class="nav-link" href="bloodbank/pages/blog.html">Blog</a>
+                          <a class="nav-link" href="pages/blog.html">Blog</a>
                         </li>
                         <li class="nav-item" id="profile">
                         </li>
@@ -58,17 +58,17 @@ function navigation(){
         <a class="nav-link" href="#" onclick="myLogout()">Logout</a>
       `;
       profileRegister.innerHTML = `
-        <a class="nav-link" href="bloodbank/pages/profile.html">Profile</a>
+        <a class="nav-link" href="pages/profile.html">Profile</a>
       `;
     } else {
       // If user ID does not exist, show "Login" option
       // const loginLogoutElement = nav.querySelector("#loginLogout");
       // const profileRegister = nav.querySelector("#profile");
       loginLogoutElement.innerHTML = `
-        <a class="nav-link" href="bloodbank/pages/login.html">Sign in</a>
+        <a class="nav-link" href="pages/login.html">Sign in</a>
       `;
       profileRegister.innerHTML = `
-        <a class="nav-link" href="bloodbank/pages/registration.html">Sign Up</a>
+        <a class="nav-link" href="pages/registration.html">Sign Up</a>
       `;
     }
   
