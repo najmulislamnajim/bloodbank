@@ -1,5 +1,6 @@
 const divisionSelect = document.getElementById('divisions');
 const districtSelect = document.getElementById('districts');
+alert("register working");
 async function fetchDivisions() {
     try {
       const response = await fetch('https://bloodbankserver-s2p9.onrender.com/donor/divisions/');
