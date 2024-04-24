@@ -108,9 +108,6 @@ function registerUser() {
         error.response.json().then(errorData => {
             const errorMessage = errorData.error;
             console.log(errorMessage);
-            // Display error message to the user, for example:
-            // const errorElement = document.getElementById('error-message');
-            // errorElement.textContent = errorMessage;
           })
   });
 }

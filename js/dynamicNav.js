@@ -61,9 +61,6 @@ function navigation(){
         <a class="nav-link" href="pages/profile.html">Profile</a>
       `;
     } else {
-      // If user ID does not exist, show "Login" option
-      // const loginLogoutElement = nav.querySelector("#loginLogout");
-      // const profileRegister = nav.querySelector("#profile");
       loginLogoutElement.innerHTML = `
         <a class="nav-link" href="pages/login.html">Sign in</a>
       `;

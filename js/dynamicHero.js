@@ -3,7 +3,7 @@ function dynamicHero(){
     const userId = localStorage.getItem('user_id');
     if (!userId) {
     div.innerHTML=`
-        <a href="./pages/registration.html" style="color: #fff">Donor Registration</a>
+        <a href="pages/registration.html" style="color: #fff">Donor Registration</a>
        
     `}
     else{
@@ -17,7 +17,7 @@ function dynamicHero2(){
     const userId = localStorage.getItem('user_id');
     if (!userId) {
     div.innerHTML=`
-        <a href="./pages/registration.html" style="color: #fff">Donor Registration</a>
+        <a href="pages/registration.html" style="color: #fff">Donor Registration</a>
        
     `}
     else{
