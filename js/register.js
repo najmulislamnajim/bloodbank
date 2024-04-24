@@ -24,7 +24,7 @@ async function fetchDivisions() {
   // Function to fetch districts based on selected division
   async function fetchDistricts(divisionId) {
     try {
-      const response = await fetch(`https://https://bloodbankserver-s2p9.onrender.com/donor/district/?division=${divisionId}`);
+      const response = await fetch(`https://bloodbankserver-s2p9.onrender.com/donor/district/?division=${divisionId}`);
       const data = await response.json();
 
       // Clear previous options
