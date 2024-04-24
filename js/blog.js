@@ -23,7 +23,7 @@ const loadBlog=()=>{
             <h2 style="color: #de1f26">${data.title}</h2>
             <p style="font-size: 13px">${blog}...</p>
             <p class="footp">
-              <a href="../pages/blogDetails.html?blogId=${data.id}"><span>
+              <a href="bloodbank/pages/blogDetails.html?blogId=${data.id}"><span>
                 ${commentCount} Comments</span>|<span style="color:blue">Read More...</span>
               </a>
             </p>
