@@ -33,7 +33,7 @@ function bgConverter(id){
 const loadUser=()=>{
     const userId = localStorage.getItem('user_id');
     console.log(userId);
-    fetch(`https://bloodbankserver-s2p9.onrender.com/donor/list/${userId}/`)
+    fetch(`https://bloodbankbd.pythonanywhere.com/donor/list/${userId}/`)
    .then((res) =>res.json())
    .then((data) =>displayUser(data))
    .catch((err) =>console.log(err));
