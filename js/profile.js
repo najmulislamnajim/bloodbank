@@ -61,7 +61,7 @@ const displayUser=(data)=>{
             <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
             <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
         </div>
-    </div>
+    </div> 
     `
 }
 
