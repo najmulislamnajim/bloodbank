@@ -1,5 +1,5 @@
 const loadLatestBlog=()=>{
-    fetch("https://bloodbankserver-s2p9.onrender.com/blog/latest/")
+    fetch("https://bloodbankbd.pythonanywhere.com/blog/latest/")
     .then((res) =>res.json())
     .then((data) =>displayLatestBlogsCard(data))
     .catch((err) =>console.log(err));
@@ -7,7 +7,7 @@ const loadLatestBlog=()=>{
 
 async function totalComments(blogId) {
   try {
-    const response = await fetch(`https://bloodbankserver-s2p9.onrender.com/blog/list/${blogId}/comments`);
+    const response = await fetch(`https://bloodbankbd.pythonanywhere.com/blog/list/${blogId}/comments`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
