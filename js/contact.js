@@ -31,7 +31,7 @@ const handleContact=()=>{
       return;
     }
   
-    fetch("https://bloodbankserver-s2p9.onrender.com/contact/", {
+    fetch("https://bloodbankbd.pythonanywhere.com/contact/", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(info),
