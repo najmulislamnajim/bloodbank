@@ -1,6 +1,6 @@
 const loadBlog=()=>{
     const param = new URLSearchParams(window.location.search).get("blogId");
-    fetch(`https://bloodbankserver-s2p9.onrender.com/blog/list/${param}`)
+    fetch(`https://bloodbankbd.pythonanywhere.com/blog/list/${param}`)
     .then((res) =>res.json())
     .then((data) =>displayBlog(data))
     .catch((err) =>console.log(err));
@@ -26,13 +26,6 @@ const displayBlog=(data)=>{
         <div class="row blog">
             <img src="${data.image}" style="width:100%;height:100%" alt="blog image">
             <p style="margin-top:50px;margin-bottom:50px">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-                <br/>
                 <br/>
                 ${data.blog}
             </p>
@@ -44,7 +37,7 @@ const displayBlog=(data)=>{
 
 const loadComments=() => {
     const param = new URLSearchParams(window.location.search).get("blogId");
-    fetch(`https://bloodbankserver-s2p9.onrender.com/blog/list/${param}/comments`)
+    fetch(`https://bloodbankbd.pythonanywhere.com/blog/list/${param}/comments`)
     .then((res) =>res.json())
     .then((data) =>displayComments(data))
     .catch((err) =>console.log(err));
@@ -75,7 +68,7 @@ const handleComment=()=>{
     const formData = new FormData(form);
     formData.append('blog', param);
 
-    fetch('https://bloodbankserver-s2p9.onrender.com/blog/comment/', {
+    fetch('https://bloodbankbd.pythonanywhere.com/blog/comment/', {
         method: 'POST',
         body: formData
     })
@@ -91,7 +84,7 @@ const handleComment=()=>{
 }
 
 const loadLatestBlog = ()=>{
-    fetch("https://bloodbankserver-s2p9.onrender.com/blog/latest")
+    fetch("https://bloodbankbd.pythonanywhere.com/blog/latest")
     .then((res) =>res.json())
     .then((data) =>displayLatestBlog(data))
 }
