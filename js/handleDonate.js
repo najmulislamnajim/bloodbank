@@ -18,7 +18,7 @@ const handleDonate=()=>{
 
    console.log(info)
 
-  fetch("https://bloodbankserver-s2p9.onrender.com/donor/donation-request/", {
+  fetch("https://bloodbankbd.pythonanywhere.com/donor/donation-request/", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(info),
