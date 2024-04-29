@@ -2,7 +2,7 @@ const divisionSelect = document.getElementById('divisions');
 const districtSelect = document.getElementById('districts');
 async function fetchDivisions() {
     try {
-      const response = await fetch('https://bloodbankserver-s2p9.onrender.com/donor/divisions/');
+      const response = await fetch('https://bloodbankbd.pythonanywhere.com/donor/divisions/');
       const data = await response.json();
 
       // Populate division select with options
@@ -23,7 +23,7 @@ async function fetchDivisions() {
   // Function to fetch districts based on selected division
   async function fetchDistricts(divisionId) {
     try {
-      const response = await fetch(`https://bloodbankserver-s2p9.onrender.com/donor/district/?division=${divisionId}`);
+      const response = await fetch(`https://bloodbankbd.pythonanywhere.com/donor/district/?division=${divisionId}`);
       const data = await response.json();
 
       // Clear previous options
@@ -86,7 +86,7 @@ function registerUser() {
   var json = JSON.stringify(object);
   console.log(json);
 
-  fetch('https://bloodbankserver-s2p9.onrender.com/donor/list/', {
+  fetch('https://bloodbankbd.pythonanywhere.com/donor/list/', {
       method: 'POST',
       body: formData
   })
