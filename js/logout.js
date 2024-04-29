@@ -10,7 +10,7 @@ const myLogout=()=>{
             "Authorization":`Token ${token}`
         }
         console.log(JSON.stringify(info));
-    fetch('https://bloodbankserver-s2p9.onrender.com/donor/logouta/',{
+    fetch('https://bloodbankbd.pythonanywhere.com/donor/logouta/',{
         method: 'GET',
     })
     .then(response => {
@@ -49,7 +49,7 @@ const myLogout2=()=>{
             "Authorization":`Token ${token}`
         }
         console.log(JSON.stringify(info));
-    fetch('https://bloodbankserver-s2p9.onrender.com/donor/logouta/',{
+    fetch('https://bloodbankbd.pythonanywhere.com/donor/logouta/',{
         method: 'GET',
     })
     .then(response => {
