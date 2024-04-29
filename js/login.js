@@ -13,7 +13,7 @@ function loginUser(){
     const formData = new FormData(form);
     console.log(...formData)
 
-    fetch('https://bloodbankserver-s2p9.onrender.com/donor/login/', {
+    fetch('https://bloodbankbd.pythonanywhere.com/donor/login/', {
       method: 'POST',
       body: formData
     })
