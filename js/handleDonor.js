@@ -8,7 +8,7 @@ function callButton(num){
 
 async function fetchDivisions() {
     try {
-        const response = await fetch('https://bloodbankserver-s2p9.onrender.com/donor/divisions/');
+        const response = await fetch('https://bloodbankbd.pythonanywhere.com/donor/divisions/');
         const data = await response.json();
 
         // Populate division select with options
@@ -65,7 +65,7 @@ async function fetchDistricts(divisionId) {
     
   }
     try {
-        const response = await fetch(`https://bloodbankserver-s2p9.onrender.com/donor/district/?division=${divisionId}`);
+        const response = await fetch(`https://bloodbankbd.pythonanywhere.com/donor/district/?division=${divisionId}`);
         const data = await response.json();
 
         // Clear previous options
@@ -121,7 +121,7 @@ let nextPageIsNull=false;
 let currentPage = 1;
 
 const handleDonorView=(division,district,bloodGroup,page = 1, pageSize = 6) => {
-  fetch(`https://bloodbankserver-s2p9.onrender.com/donor/list/?division=${division}&District=${district}&blood_group=${bloodGroup}&page=${page}&page_size=${pageSize}`)
+  fetch(`https://bloodbankbd.pythonanywhere.com/donor/list/?division=${division}&District=${district}&blood_group=${bloodGroup}&page=${page}&page_size=${pageSize}`)
   .then(res=>res.json())
   .then(data=>{
     nextPageIsNull=data.next?false:true;
